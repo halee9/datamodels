@@ -36,6 +36,6 @@
     "sinon": "1.17.6"
   },
   "czConfig": {
-    "path": "node-modules/cz-conventional-changelog"
+    "path": "node_modules/cz-conventional-changelog"
   }
 }
