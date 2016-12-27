@@ -1,16 +1,18 @@
 {
   "name": "@halee9/datamodels",
-  "version": "1.0.0",
+  "version": "0.0.0-development",
   "description": "",
   "main": "dist/index.js",
   "scripts": {
+    "commit": "git-cz",
     "prestart": "babel src --out-dir dist",
     "start": " node dist/index.js",
-    "test": "mocha --compilers js:babel-core/register"
+    "test": "mocha --compilers js:babel-core/register",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/halee9/datamodels.git"
+    "url": "https://github.com/halee9/datamodels.git"
   },
   "author": "Ha Lee <halee9@gmail.com>",
   "license": "MIT",
@@ -27,7 +29,13 @@
     "babel-core": "6.21.0",
     "babel-preset-es2015": "6.18.0",
     "chai": "3.5.0",
+    "commitizen": "2.9.2",
+    "cz-conventional-changelog": "1.2.0",
     "mocha": "3.2.0",
+    "semantic-release": "^6.3.2",
     "sinon": "1.17.6"
+  },
+  "czConfig": {
+    "path": "node-modules/cz-conventional-changelog"
   }
 }

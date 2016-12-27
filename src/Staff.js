@@ -17,4 +17,14 @@ var staffSchema = new Schema({
   timestamps: true
 });
 
-module.exports = mongoose.model('Staff', staffSchema);
+let Staff = mongoose.model('Staff', staffSchema);
+
+Staff.getAll = () => {
+  return new Promise((resolve, reject) => {
+    Staff.find({}).exec((err, res) => {
+      err ? reject(err) : resolve(res);
+    });
+  });
+};
+
+module.exports = Staff;
