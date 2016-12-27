@@ -8,7 +8,7 @@
     "start": " node dist/index.js",
     "test": "mocha --compilers js:babel-core/register -w",
     "test:single": "mocha --compilers js:babel-core/register",
-    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+    "semantic-release": "semantic-release pre && npm publish --access=public && semantic-release post"
   },
   "repository": {
     "type": "git",
@@ -40,5 +40,5 @@
       "path": "cz-conventional-changelog"
     }
   },
-  "version": "0.0.0-development"
+  "version": "0.0.0-semantically-released"
 }
