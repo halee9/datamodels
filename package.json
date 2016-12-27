@@ -6,7 +6,8 @@
     "commit": "git-cz",
     "prestart": "babel src --out-dir dist",
     "start": " node dist/index.js",
-    "test": "mocha --compilers js:babel-core/register",
+    "test": "mocha --compilers js:babel-core/register -w",
+    "test:single": "mocha --compilers js:babel-core/register",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "repository": {
