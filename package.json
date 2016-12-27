@@ -1,5 +1,6 @@
 {
   "name": "@halee9/datamodels",
+  "version": "0.0.0-semantically-released",
   "description": "",
   "main": "dist/index.js",
   "scripts": {
@@ -39,6 +40,5 @@
     "commitizen": {
       "path": "cz-conventional-changelog"
     }
-  },
-  "version": "0.0.0-semantically-released"
+  }
 }
