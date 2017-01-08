@@ -5,5 +5,6 @@ import User from './User';
 module.exports = {
   Order: Order,
   Staff: Staff,
-  User: User
+  User: User,
+  Store: Store
 };
