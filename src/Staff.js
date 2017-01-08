@@ -27,4 +27,16 @@ Staff.getAll = () => {
   });
 };
 
+// Staff.getById = (id) => {
+//   return new Promise((resolve, reject) => {
+//     Staff.findById(id).exec((err, res) => {
+//       err ? reject(err) : resolve(res);
+//     });
+//   });
+// };
+Staff.getById = (id) => {
+  return Staff.findById(id);
+};
+
+
 module.exports = Staff;
